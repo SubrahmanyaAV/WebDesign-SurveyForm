@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Code Now Survey Form</h1>
+    <p id=description>Thank you for taking the time to help us improve the platform</p> 
+
+<form id="survey-form">
+ <fieldset> 
+<label id="name-label"> Name:           <input id="name" name="name"  type="text" placeholder="Enter your name" required /></label>
+    <label id="email-label"> Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+   <label id="number-label"> Age (years): <input id="number" type="number" name="age" min="13" max="120" placeholder="age" /></label>
+</fieldset>
+
+<fieldset>
+<label id="number-label"> Which option best describes your current role? 
+<select id="dropdown" >
+    <option value="">Select an option</option>
+    <option value="1">Student</option>
+    <option value="2">Fresher</option>
+    <option value="2">Experienced</option>
+</select>
+</label>
+
+<label>Would you recommend Code Now to a friend?
+<label for="definitely"><input class="inline" type="radio" name="radioButton" value="Definitely" /> Definitely </label>
+<label for="maybe"><input type="radio" name="radioButton" class="inline" value="Maybe" /> Maybe </label>
+</label>
+
+<label>What is your favorite feature of Code Now?
+<select>
+ <option value="">Select an option</option>
+ <option value="1">Community</option>
+ <option value="2">Challenges</option>
+ <option value="3">Projects</option>
+</select>
+</label>
+
+</fieldset>
+<fieldset>
+
+<label for="feedback">What would you like to see improved? (Check all that apply) <br>
+<input id="Front-end Projects" type="checkbox"  name="Front-end Projects" value="front" class="inline" /> 
+Front-end Projects<br>
+<input id="Back-end Projects" type="checkbox"  name="Back-end Projects" value="back" class="inline" /> 
+Back-end Projects <br>
+<input id="Challenges" type="checkbox"  name="Challenges" value="challenges" class="inline" /> 
+Challenges <br>
+<input id="Videos" type="checkbox"  name="Videos" class="inline" value="videos" /> 
+Videos <br>
+<input id="Additional Courses" type="checkbox"  name="Additional Courses" class="inline" value="courses" /> 
+Additional Courses <br>
+<input id="Wiki" type="checkbox"  name="Wiki" value="wiki" class="inline" /> 
+Wiki <br>
+</label>
+
+<label for="bio">Any comments or suggestions?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+</label>
+</fieldset>
+<input id="submit" type="submit" value="Submit" />
+
+</form>
+</body>
+</html>
